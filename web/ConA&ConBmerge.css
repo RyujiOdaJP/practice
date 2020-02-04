@@ -38,35 +38,78 @@ body {
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: justify;
+  justify-items: center;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  height: 10vh;
+  height: 12vh;
+
 }
-.navigation_menu1 {
-  display: block;
+.navigation a{
+  color: #919191;
+  font-size: 12px;
 }
+
+.navigation_brand img{
+  width: 50px;
+  height: 50px;
+}
+
 .navigation_menu1 ul {
   margin: 0;
   padding: 0;
-  display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+.navigation_menu2 ul{
+  margin: 0;
+}
 .navigation li {
   list-style: none;
+  text-align: -webkit-match-parent;
+  display: inline-block;
 }
 .navigation a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none !important;
   padding: 10px;
+
 }
 .navigation a:hover {
   color: var(--accent-color);
+}
+
+.navigation_menu2 a{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.ic-heart{
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+.ic-heart::before{
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "Material Icons";
+  content: "\e87e"
+}
+
+.ic-star{
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+.ic-star::before{
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "Material Icons";
+  content: "\e83a";
 }
 
 /* Contents A Hero-image */
@@ -171,7 +214,7 @@ slide:nth-child(4) {
   font-family: "Times New Roman", Times, serif;
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 15vw; /* 15vw = 15% of screensize of every devices*/
+  font-size: 11vw; /* 15vw = 15% of screensize of every devices*/
   letter-spacing: 0em; /* 1 em = 1 font-size */
 }
 
@@ -187,8 +230,8 @@ slide:nth-child(4) {
   margin: 20px; /* sapce of between content and outside*/
   padding: 10px 30px; /*space of inside of block*/
   background-image: linear-gradient(
-    rgba(241, 241, 241, 0.9),
-    rgb(238, 238, 238, 0.9)
+    rgba(241, 241, 241, 0.7),
+    rgba(238, 238, 238, 0.9)
   );
   border: solid var(--text-bright-color);
   color: black;
@@ -218,7 +261,7 @@ If the display size is going to be larger than 768px,
 it will be applied priority */
 @media (min-width: 850px) {
   .conA h1 {
-    font-size: 115px;
+    font-size: 85px;
   }
 
   .conA p {
@@ -368,7 +411,7 @@ a {
     width: 100%;
   }
   .container:hover .overlay {
-    height: 50%;
+    height: 30%;
   }
   .overlay {
     background-color: rgba(2, 2, 8, 0.9);
@@ -403,7 +446,7 @@ a {
   }
 }
 @media (max-width: 950px) {
-  h1 {
+  .conB h1 {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
@@ -473,7 +516,7 @@ a {
   }
 }
 @media (max-width: 850px) {
-  h1 {
+  .conB h1 {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
@@ -543,7 +586,7 @@ a {
   }
 }
 @media (max-width: 500px) {
-  h1 {
+  .conB h1 {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
