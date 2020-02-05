@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>world in hand</title>
 
-    <script src="responsible_menu.js"></script>
+    <!-- <script src="responsible_menu.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -67,7 +67,7 @@
         </div>
     </header>
     <main>
-    <section class="conA">
+    <section class="conA" aria-hidden="true">
     
         <slider class="colorfilter-image">
             <slide id="slide1">
@@ -87,7 +87,7 @@
             </slide>
             <slide id="slide3">
                 <div class="container">
-                    <h1>Osaka... the secound capital in Japan</h1>
+                    <h1>Osaka... the second capital in Japan</h1>
                     <p>Not only secound but also it's involved thousands of deep spot. </p>
                     <a class="centerbutton">READ MORE</a>
                 </div>
@@ -116,7 +116,7 @@
             <tr>
                 <td>
                     <div class="container">
-                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                        <img class="photo" src="pictures/ancient-architecture-asia-bench-301614.jpg"
                             alt="">
                         <div class="overlay">
                             <p class="content">Some text here relate to the content.Some text here relate to the
@@ -132,7 +132,7 @@
                 <td>
                     <div class="container">
                         <img class="photo"
-                            src="https://i.pinimg.com/originals/2c/99/a6/2c99a6aa944687c09ce6922727a16ef2.jpg" alt="">
+                            src="pictures/ancient-architecture-asia-building-96932.jpg" alt="">
                         <div class="overlay">
                             <p class="content">Some text here relate to the content.Some text here relate to the
                                 content.</p>
@@ -147,7 +147,7 @@
                 <td>
                     <div class="container">
                         <img class="photo"
-                            src="https://www.allkpop.com/upload/2019/11/content/271126/1574871984-1566216698-7-blackpink-jisoo-dior-pop-up-store-event-19-august-2019.jpg"
+                            src="pictures/close-up-photography-of-cherry-blossom-tree-1440476.jpg"
                             alt="">
                         <div class="overlay">
                             <p class="content">Some text here relate to the content.Some text here relate to the
@@ -164,7 +164,7 @@
             <tr>
                 <td>
                     <div class="container">
-                        <img class="photo" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+                        <img class="photo" src="pictures/shallow-focus-photography-of-brown-wooden-handheld-baskets-634009.jpg"
                             alt="">
                         <div class="overlay">
                             <p class="content">Some text here relate to the content.Some text here relate to the
@@ -322,17 +322,30 @@
         <h1>What to Watch?</h1>
         <hr size="3" color="#e61eba" width="2%">
         <p id="hot">These stories really hot in Japan these days:</p>
+        <div class="movie">
         <table>
             <tr>
-                <td><iframe class="photo" src="https://www.youtube.com/embed/6k7a8bw451M" frameborder="0"
+                <td>
+                <div class="container">
+                    <iframe class="photo" src="https://www.youtube.com/embed/6k7a8bw451M" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></td>
-                <td><iframe class="photo" src="https://www.youtube.com/embed/-xLQwT_INwY" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                </td>
+                <td>
+                <div class="container">
+                    <iframe class="photo" src="https://www.youtube.com/embed/-xLQwT_INwY" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></td>
-                <td><iframe class="photo" src="https://www.youtube.com/embed/OgoK3XxJhbQ" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                </td>
+                <td>
+                <div class="container">
+                    <iframe class="photo" src="https://www.youtube.com/embed/OgoK3XxJhbQ" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></td>
+                        allowfullscreen></iframe>
+                </div>
+                </td>
             </tr>
             <tr>
                 <td id="more_article" align="center" colspan="3"><a href="">
@@ -340,6 +353,7 @@
                     </a></td>
             </tr>
         </table>
+        </div>
         </section>
       </main>
     </body>
