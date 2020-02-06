@@ -44,11 +44,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   height: 10vh;
-
-}
-.navigation a{
-  color: #919191;
-  font-size: 14px;
 }
 
 .navigation_brand img{
@@ -73,11 +68,11 @@ body {
   text-align: -webkit-match-parent;
   display: inline-block;
 }
-.navigation a {
-  display: flex;
-  flex-direction: column;
+.navigation_menu1 a { 
   text-decoration: none !important;
   padding: 10px;
+  color: #919191;
+  font-size: 14px;
 
 }
 .navigation a:hover {
@@ -98,7 +93,7 @@ body {
   font-weight: normal;
   font-size: 24px;
   font-family: "Material Icons";
-  content: "\e87e"
+  content: "\e87e";
 }
 
 .ic-star{
@@ -251,7 +246,7 @@ slide:nth-child(4) {
   display: block;
 }
 
-/* An event that the cursol is crossing on buttom. */
+/* An event that the cursol is crossing on button. */
 .conA a:hover {
   transition:all 0.1s ease-out;
     background-color:rgba(255, 255, 255, 0.205);
