@@ -1,0 +1,398 @@
+<!-- marge conA and conB -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>world in hand</title>
+
+    <!-- <script src="responsible_menu.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+    <body>
+    <header>
+        <div class="container">
+        <div class="navigation">
+            <div class="navigation_brand">
+                <ul>
+                    <li><a href=""><img alt="logo" src="pictures/tetitive%20logo.png"></a></li>
+                </ul>
+            </div>
+            <nav class="navigation_menu1" role="navigation">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Travel info</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Seasons</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation_menu2" role="navigation">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="ic-heart" aria-hidden="true"></span>
+                            <span>Like</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="ic-lang" aria-hidden="true"></span>
+                            <span>Language</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="ic-search" aria-hidden="true"></span>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <nav class="NavMenu">
+            　<ul>
+            　　<li><a href="#">Menu1</a></li>
+            　　<li><a href="#">Menu2</a></li>
+            　　<li><a href="#">Menu3</a></li>
+            　　<li><a href="#">Menu4</a></li>
+            　　<li><a href="#">Menu5</a></li>
+            　</ul>
+            </nav>
+            <!-- ハンバーガーメニュー部分 --> 
+            <div class="Togglespace">
+                <div class="navigation_brand">
+                    <a href=""><img alt="logo" src="pictures/tetitive%20logo.png"></a>
+                </div>
+                <div class="Toggle">
+                    　　<span></span>
+                    　　<span></span>
+                    　　<span></span>
+                </div>                
+            </div>
+            
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+                $(function() {
+                    var scrollpos;
+                    $('.Toggle').click(function() {
+                    $(this).toggleClass('active');
+                    scrollpos = $(window).scrollTop();
+                    $('body').addClass('fixed').css({'top': -scrollpos});
+                　
+                if ($(this).hasClass('active')) {
+                    $('.NavMenu').addClass('active');　 //クラスを付与
+                　
+                } else {
+                    $('.NavMenu').removeClass('active'); //クラスを外す
+                    $('body').removeClass('fixed').css({'top': 0});
+                    window.scrollTo( 0 , scrollpos );
+                   }
+                　});
+                });
+            </script>
+
+    </header>
+    <main>
+    <section class="conA" aria-hidden="true">
+    
+        <slider>
+            <slide id="slide1">
+                <div class="container">
+                    <h1>Find spiritual shrine in Kyoto!</h1>
+                    <a class="slidechange" href="#slide4">l</a><a class="slidechange" href="#slide2">r</a>
+                    <p>There is no option to go to Japan without visiting Fushimi-Inari</p>
+                    <a class="centerbutton">READ MORE</a>
+                </div>
+            </slide>
+            <slide id="slide2">
+                <div class="container">
+                    <h1>Traditional houses which were actually lived</h1>
+                    <p>Would you like to see them with beautiful Mt. Fuji? </p>
+                    <a class="centerbutton">READ MORE</a>
+                </div>
+            </slide>
+            <slide id="slide3">
+                <div class="container">
+                    <h1>Osaka... the second capital in Japan</h1>
+                    <p>Not only secound but also it's involved thousands of deep spot. </p>
+                    <a class="centerbutton">READ MORE</a>
+                </div>
+            </slide>
+            <slide id="slide4">
+                <div class="container">
+                    <h1>The old Harbor in modern city</h1>
+                    <p>Would you like to know how this destroyed city got recoverd?</p>
+                    <a class="centerbutton">READ MORE</a>
+                </div>
+            </slide>
+        </slider>
+     
+    
+    
+    </section>
+
+    <section class="conB">
+       
+        <div class="hover"></div>
+      <div class="conB">  
+        <h1>What's Hot?</h1>
+        <hr size="3" color="#e61eba" width="2%">
+        <p id="hot">These stories really hot in Japan these days:</p>
+        <table>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="pictures/ancient-architecture-asia-bench-301614.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo"
+                            src="pictures/ancient-architecture-asia-building-96932.jpg" alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo"
+                            src="pictures/close-up-photography-of-cherry-blossom-tree-1440476.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="pictures/shallow-focus-photography-of-brown-wooden-handheld-baskets-634009.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://rautagroup.com/wp-content/uploads/2017/05/rixos_01.jpg" alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo"
+                            src="https://www.shutterbug.com/images/styles/600_wide/public/The-Best-Lens-for-Long-Exposure-Photography_0.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="more_article" align="center" colspan="3"><a href="">
+                        <p>MORE ARTICLE</p>
+                    </a></td>
+            </tr>
+        </table>
+      </div>
+        <h1>What to Do?</h1>
+        <hr size="3" color="#e61eba" width="2%">
+        <p id="hot">These stories really hot in Japan these days:</p>
+        <table>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <img class="photo" src="https://farm2.static.flickr.com/1903/44600890375_21ccd65016_b.jpg"
+                            alt="">
+                        <div class="overlay">
+                            <p class="content">Some text here relate to the content.Some text here relate to the
+                                content.</p>
+                            <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div class="text_overlay">
+                            <p>SOME TEXT HERE RELATE TO THE CONTENT</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="more_article" align="center" colspan="3"><a href="">
+                        <p>MORE ARTICLE</p>
+                    </a></td>
+            </tr>
+        </table>
+        <h1>What to Watch?</h1>
+        <hr size="3" color="#e61eba" width="2%">
+        <p id="hot">These stories really hot in Japan these days:</p>
+        <div class="movie">
+        <table>
+            <tr>
+                <td>
+                <div class="container">
+                    <iframe class="photo" src="https://www.youtube.com/embed/6k7a8bw451M" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                </td>
+                <td>
+                <div class="container">
+                    <iframe class="photo" src="https://www.youtube.com/embed/-xLQwT_INwY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                </td>
+                <td>
+                <div class="container">
+                    <iframe class="photo" src="https://www.youtube.com/embed/OgoK3XxJhbQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="more_article" align="center" colspan="3"><a href="">
+                        <p>MORE ARTICLE</p>
+                    </a></td>
+            </tr>
+        </table>
+        </div>
+        </section>
+      </main>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
