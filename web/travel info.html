@@ -7,10 +7,160 @@
     <title>travel info</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ConA&ConBmerge.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+        <div class="navigation">
+            <div class="navigation_brand">
+                <ul>
+                    <li><a href="index.html"><img alt="logo" src="pictures/tetitive%20logo.png"></a></li>
+                </ul>
+            </div>
+            <nav class="navigation_menu1" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Travel info</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Seasons</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation_menu2" role="navigation">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="ic-heart" aria-hidden="true"></span>
+                            <span>Like</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="ic-lang" aria-hidden="true"></span>
+                            <span>Language</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="ic-search" aria-hidden="true"></span>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <nav class="NavMenu">
+            　<ul>
+            　　<li><a href="#">Menu1</a></li>
+            　　<li><a href="#">Menu2</a></li>
+            　　<li><a href="#">Menu3</a></li>
+            　　<li><a href="#">Menu4</a></li>
+            　　<li><a href="#">Menu5</a></li>
+            　</ul>
+            </nav>
+            <!-- ハンバーガーメニュー部分 --> 
+            <div class="Togglespace">
+                <div class="navigation_brand">
+                    <a href=""><img alt="logo" src="pictures/tetitive%20logo.png"></a>
+                </div>
+                <div class="Toggle">
+                    　　<span></span>
+                    　　<span></span>
+                    　　<span></span>
+                </div>                
+            </div>
+            
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+                $(function() {
+                    var scrollpos;
+                    $('.Toggle').click(function() {
+                    $(this).toggleClass('active');
+                    scrollpos = $(window).scrollTop();
+                    $('body').addClass('fixed').css({'top': -scrollpos});
+                　
+                if ($(this).hasClass('active')) {
+                    $('.NavMenu').addClass('active');　 //クラスを付与
+                　
+                } else {
+                    $('.NavMenu').removeClass('active'); //クラスを外す
+                    $('body').removeClass('fixed').css({'top': 0});
+                    window.scrollTo( 0 , scrollpos );
+                   }
+                　});
+                });
+            </script>
+
+    </header>
+    <main>
+        <section class="conA">
+          <div class="subpage_top" style="background-image: url(pictures/travelinfo.jpg);">
+            <div class="container" style="text-align: center;">
+                <h1>Travel info</h1>
+                <p>scroll down</p>
+            </div>
+          </div>
+
+        </section>
+        <section class="conB">
+            <div class="container"> 
+                <h1>Transportation</h1>
+                <hr size="3" color="#e61eba" width="2%">
+                <p class="hot" style="padding: 3%; text-align: left;">With a peerless public transportation network and an increasing number of multi lingual signage, getting around Tokyo is becoming relatively stress-free. With a JR Rail Pass or travel card, you can navigate stations, hop on and off buses and even take waterbuses with ease. Traveling over ground, underground, at slow-speed or ultra-fast-speed are all options in the city. The streets are crowded with taxis—many with English signage—and a vast network of buses criss-cross the city. Central Tokyo itself is relatively small meaning renting a bicycle is a practical and fun way to navigate the city.</p>
+            </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="container">
+                                <img class="photo" src="pictures/jr_east.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="content">The Japan Rail (JR) network of trains covers the whole of the country and JR East is responsible for the network in the east of Japan including Tokyo. </p>
+                                    <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                                <div class="text_overlay">
+                                    <p>Japan Rail (JR)</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <img class="photo" src="pictures/shinkansen.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="content">Shinkansen trains speeding in and out of Tokyo Station is synonymous with the fast-paced and modern image of the city.</p>
+                                    <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                                <div class="text_overlay">
+                                    <p>Jhinkansen (Bullet Train)</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <img class="photo" src="pictures/metro.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="content">Japan is renowned for its comprehensive and efficient train network – and its underground trains are no different. Covering the whole city with more than 280 stations, Tokyo subway lines will help you get to almost any destination quickly and easily.</p>
+                                    <a class="readmore" href="">READ MORE&nbsp;<i class="fa fa-arrow-circle-o-right"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                                <div class="text_overlay">
+                                    <p>JThe Tokyo subway system</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td id="more_article" align="center" colspan="3"><a href="">
+                                <p>MORE ARTICLE</p>
+                            </a></td>
+                    </tr>
+                </table>
+        </section>
+    </main>
 </body>
 </html>

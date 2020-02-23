@@ -188,6 +188,16 @@ nav.NavMenu{
 li {
   display: inline;
 }
+.subpage_top{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 slider {
   display: block;
@@ -466,7 +476,7 @@ hr{
   margin-right: auto;
 }
 
-#hot {
+.hot {
   color: gray;
 }
 table {
@@ -549,7 +559,7 @@ a {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
-  #hot {
+.hot {
     color: gray;
   }
   /* table {
@@ -618,7 +628,7 @@ a {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
-  #hot {
+.hot {
     color: gray;
   }
   /* table {
@@ -688,7 +698,7 @@ a {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
-  #hot {
+.hot {
     color: gray;
   }
   /* table {
@@ -758,7 +768,7 @@ a {
     color: rgb(230, 30, 186);
     margin-top: 5%;
   }
-  #hot {
+.hot {
     color: gray;
   }
   /* table {
